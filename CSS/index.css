@@ -1,0 +1,266 @@
+*{
+
+    padding: auto;
+    margin: auto;
+    box-sizing: border-box;
+    
+}
+
+.header{
+
+    width: 100%;
+    padding: 10px 30px;
+    background-color: #ee534e;
+}
+
+
+.header h5{
+
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+    color:#fff;
+
+}
+
+/* upper btn box */
+.upper-btn-box{
+
+    width:100%;
+    height:100px;
+   
+    display: flex;
+    padding: 30px;
+}
+
+
+/*left btn box*/
+.upper-btn-box .left-btn-box{
+
+    width: 50%;
+    height: 100%;
+    
+}
+
+/*right btn box*/
+.upper-btn-box .right-btn-box{
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.upper-btn-box .left-btn-box button{
+
+    border: none;
+    outline: none;
+    background-color: #4286f5;
+    padding: 13px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#fff;
+    margin: 0px 10px;
+}
+
+
+.upper-btn-box .right-btn-box i{
+
+    font-size: 25px;
+    color:#4286f5;
+    padding: 10px;
+
+}
+
+.upper-btn-box .right-btn-box input{
+
+    width: 80%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid #4286f5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-family: bold;
+    
+}
+
+.upper-btn-box .right-btn-box button{
+
+    border: none;
+    outline: none;
+    background-color: #ee534e;
+    padding: 10px;
+    font-size:18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#fff;
+    margin: 0px 1opx;
+}
+
+/* Start table coding */
+.table-box{
+ 
+    width:95%;
+    padding:30px;
+
+}
+
+.table-box table{
+
+    width: 95%;
+    /* border: 1px solid #ccc; */
+}
+
+.table-box table tr th{
+
+    border-right: 1px solid #ccc;
+    padding:  30px 0px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+    color:red;
+
+}
+
+.table-box table tr td{
+
+    border-right: 1px solid #ccc;
+    padding:10px 0px 5px;
+    text-align: center;
+    font-family: verdana;
+    border-bottom: 1px solid #ccc;
+    font-size: 12px;
+}
+
+.table-box table tr td button{
+
+   width: 40%;
+    border: none;
+    outline: none;
+    background-color:#4286f5;
+    font-size:18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#fff;
+    margin: 0px 1opx;
+
+}
+
+
+.model{
+
+    width: 0%;
+    height: auto;
+    background-color:#f2f2f2;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    border-top:20px groove #4286f5;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+}
+
+.model.active{
+    width: 60%;
+    opacity: 1;
+    z-index: 1;
+}
+.model .close-icon{
+
+    position: absolute;
+    right: -15px;
+    top:-35px;
+    font-size: 30px;
+    padding: 10px;
+    color:#ee534e;
+
+}
+.model .model-left{
+
+    width: 30%;
+    height: 100%;
+    background-color:#f2f2f2;
+
+    
+
+}
+
+.model .model-left .img-box{
+
+    width: 100%;
+    height: 300px;
+    /* background-color: blue; */
+    display: flex;
+    padding:10px;
+    position: relative;
+}
+
+.model .model-left .img-box i{
+    font-size: 30px;
+    padding: 10px;
+    position:absolute;
+    right: 20px;
+    top:90px;
+    color:#4286f5;
+}
+
+.model .model-left .img-box input{
+
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 20px;
+     top:90px;
+     opacity: 0;
+}
+
+
+
+
+.model .model-left .img-box .img{
+
+    border-radius: 10px;
+}
+
+.model .model-right{
+
+    width: 70%;
+    height: 100%;
+    border-left: 5px groove #4286f5;
+    padding: 40px;
+
+
+}
+
+.model .model-right .input-box{
+  
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.model .model-right .input-box label{
+
+    font-size: 16px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin:20px 0 px;
+}
+
+.model .model-right .input-box input{
+
+    width: 70%;
+    margin: 10px 0px;
+    border:none;
+    padding: 13px;
+    outline: none;
+    border-bottom: 3px solid #4286f5;
+    background-color: transparent;
+}
+
+.model .model-right .input-box button:disabled{
+
+    filter:grayscale(80%);
+}
